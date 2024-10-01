@@ -17,15 +17,17 @@ concurrency: release
 env:
   POWERSHELL_TELEMETRY_OPTOUT: 1
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
-  RYUJINX_BASE_VERSION: "1.2"
+  RYUJINX_BASE_VERSION: "2.0"
   RYUJINX_TARGET_RELEASE_CHANNEL_NAME: "master"
-  RYUJINX_TARGET_RELEASE_CHANNEL_OWNER: "Ryujinx"
-  RYUJINX_TARGET_RELEASE_CHANNEL_REPO: "release-channel-master"
+  RYUJINX_TARGET_RELEASE_CHANNEL_OWNER: "mantazzo"
+  RYUJINX_TARGET_RELEASE_CHANNEL_REPO: "Ryujinx-Test"
 
 jobs:
   tag:
     name: Create tag
     runs-on: ubuntu-20.04
+    permissions:
+      contents: write
     steps:
       - name: Get version info
         id: version_info
@@ -53,6 +55,7 @@ jobs:
           omitBodyDuringUpdate: true
           owner: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_OWNER }}
           repo: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_REPO }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   release:
     name: Release for ${{ matrix.platform.name }}
@@ -141,7 +144,7 @@ jobs:
           replacesArtifacts: true
           owner: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_OWNER }}
           repo: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_REPO }}
-          token: ${{ secrets.RELEASE_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
 
   macos_release:
     name: Release MacOS universal
@@ -213,5 +216,5 @@ jobs:
     uses: ./.github/workflows/flatpak.yml
     needs: release
     with:
-      ryujinx_version: "1.1.${{ github.run_number }}"
+      ryujinx_version: "2.0.${{ github.run_number }}"
     secrets: inherit
