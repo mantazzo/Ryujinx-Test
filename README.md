@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://ryujinx.org/"><img src="https://i.imgur.com/srZVzuY.png" alt="Ryujinx" width="150"></a>
+  <a href="https://ryujinx.org/"><img src="img/logo.png" alt="Ryujinx" width="150"></a>
   <br>
   <b>Ryujinx</b>
   <br>
