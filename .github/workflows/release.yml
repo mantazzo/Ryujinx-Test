@@ -53,10 +53,7 @@ jobs:
           omitBodyDuringUpdate: true
           owner: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_OWNER }}
           repo: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_REPO }}
-<<<<<<< Updated upstream
-=======
           token: ${{ secrets.RELEASE_TOKEN }}
->>>>>>> Stashed changes
 
   release:
     name: Release for ${{ matrix.platform.name }}
