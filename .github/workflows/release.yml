@@ -26,6 +26,8 @@ jobs:
   tag:
     name: Create tag
     runs-on: ubuntu-20.04
+    permissions:
+      contents: write
     steps:
       - name: Get version info
         id: version_info
@@ -53,7 +55,7 @@ jobs:
           omitBodyDuringUpdate: true
           owner: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_OWNER }}
           repo: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_REPO }}
-          token: ${{ secrets.RELEASE_TOKEN }}
+
 
   release:
     name: Release for ${{ matrix.platform.name }}
