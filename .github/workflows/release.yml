@@ -17,7 +17,7 @@ concurrency: release
 env:
   POWERSHELL_TELEMETRY_OPTOUT: 1
   DOTNET_CLI_TELEMETRY_OPTOUT: 1
-  RYUJINX_BASE_VERSION: "1.2"
+  RYUJINX_BASE_VERSION: "1.1"
   RYUJINX_TARGET_RELEASE_CHANNEL_NAME: "master"
   RYUJINX_TARGET_RELEASE_CHANNEL_OWNER: "Ryujinx"
   RYUJINX_TARGET_RELEASE_CHANNEL_REPO: "release-channel-master"
@@ -53,6 +53,10 @@ jobs:
           omitBodyDuringUpdate: true
           owner: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_OWNER }}
           repo: ${{ env.RYUJINX_TARGET_RELEASE_CHANNEL_REPO }}
+<<<<<<< Updated upstream
+=======
+          token: ${{ secrets.RELEASE_TOKEN }}
+>>>>>>> Stashed changes
 
   release:
     name: Release for ${{ matrix.platform.name }}
