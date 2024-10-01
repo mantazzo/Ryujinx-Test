@@ -12,7 +12,7 @@
   Ryujinx is an open-source Nintendo Switch emulator, created by gdkchan, written in C#.
   This emulator aims at providing excellent accuracy and performance, a user-friendly interface and consistent builds.
   It was written from scratch and development on the project began in September 2017.
-  Ryujinx is available on Github under the <a href="https://github.com/Ryujinx/Ryujinx/blob/master/LICENSE.txt" target="_blank">MIT license</a>.
+  Ryujinx is available on Github under the <a href="https://github.com/mantazzo/Ryujinx-Test/blob/master/LICENSE.txt" target="_blank">MIT license</a>.
   <br />
 </p>
 
@@ -81,7 +81,7 @@ Make sure your SDK version is higher or equal to the required version specified 
 
 ### Step 2
 
-Either use `git clone https://github.com/Ryujinx/Ryujinx` on the command line to clone the repository or use Code --> Download zip button to get the files.
+Either use `git clone https://github.com/mantazzo/Ryujinx-Test` on the command line to clone the repository or use Code --> Download zip button to get the files.
 
 ### Step 3
 
@@ -137,7 +137,7 @@ This folder is located in the user folder, which can be accessed by clicking `Op
 
 ## Contact
 
-If you have contributions, suggestions, need emulator support or just want to get in touch with the team, join our [Discord server](https://discord.com/invite/Ryujinx).
+If you have contributions, suggestions, need emulator support or just want to get in touch with the team, join our [Discord server](https://discord.com/invite/Ryujinx) (currently not working).
 You may also review our [FAQ](https://github.com/Ryujinx/Ryujinx/wiki/Frequently-Asked-Questions).
 
 ## Donations
