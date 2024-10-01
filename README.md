@@ -135,7 +135,7 @@ This folder is located in the user folder, which can be accessed by clicking `Op
 
 ## Contact
 
-If you have contributions, suggestions, need emulator support or just want to get in touch with the team, join our [Discord server](https://discord.com/invite/Ryujinx) (currently not working).
+~~If you have contributions, suggestions, need emulator support or just want to get in touch with the team, join our Discord server.~~ Not available anymore, sorry. Such a shame.
 You may also review our [FAQ](https://github.com/Ryujinx/Ryujinx/wiki/Frequently-Asked-Questions).
 
 ## Donations
